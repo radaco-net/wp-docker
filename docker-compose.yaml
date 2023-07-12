@@ -12,7 +12,7 @@ services:
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: StrongRootPassword456
+      WORDPRESS_DB_PASSWORD: StrongRootPassword45699
       WORDPRESS_DB_NAME: wordpress
     ports:
       - 8088:80
@@ -27,10 +27,10 @@ services:
     volumes:
       - ./database:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: StrongRootPassword456
+      MYSQL_ROOT_PASSWORD: StrongRootPassword45699
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
-      MYSQL_PASSWORD: StrongRootPassword456
+      MYSQL_PASSWORD: StrongRootPassword45699
     networks:
       - tourNetwork
   phpmyadmin:
@@ -42,7 +42,7 @@ services:
       - 8089:80
     environment:
       PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: StrongRootPassword456
+      MYSQL_ROOT_PASSWORD: StrongRootPassword45699
     networks:
       - tourNetwork
 networks:
